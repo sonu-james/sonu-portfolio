@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./images/leone-venter-VieM9BdZKFo-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Inconsolata", monospace;
+    overflow-x: hidden;
+ /* position:absolute; */
+    background-attachment: fixed;
+   
+}
+.navbar-brand{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 130px;
+    font-family: "Pacifico", cursive;
+}
+.navbar-nav{
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: rgb(240, 38, 72) ;
+}
+
+.images{
+    position:relative;
+    width: 100%;
+    height: 95%;
+    margin-left: 30%;
+    /* margin-top: 5%; */
+    bottom: 0px;
+   
+} 
+.imageGroup{
+    position: absolute;
+    height: 300px;
+    transform: translate(-50%);
+    transition: bottom 1s,left 2s; 
+    
+}
+.intro{
+    /* background-image: url(./images/5651990.webp);
+    background-size: cover; */
+    position: absolute;
+    font-family: "Inconsolata", monospace;
+    width: 100%;
+    /* height: 500px; */
+    margin-left: 130px;
+    margin-top: 22%; 
+    font-size: 19px;
+    
+}
+
+.images:hover #profileImg{
+    left: 30px;
+}
+.images:hover #shape{
+    right: 67%;
+}
+#about{
+    position: relative;
+    margin-top: 42%;
+}
+
+@media(max-width:650px){
+    #about{
+        margin-top: 500px; 
+    }
+}
+
+
+.ImgContainer{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 1px solid white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 38, 72);
+}
+
+.title1{
+    width:100%;
+    text-align: center;
+    font-size: 30px;
+   
+}
+.title1 span{
+    text-align: center;
+    color: rgb(240, 38, 72);
+    font-size: 25px;
+} 
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    background-color:rgba(240, 38, 72, 0.727);
+    border: 3px groove white;
+    border-radius: 10px;
+    color: white;
+}
+
+.left-section img{
+    width:80%;
+    height:500px
+}
+.right-section{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 300;
+    
+    
+}
+.right-section p{
+    text-align: justify;
+}
+.info{
+    margin-top: 30px;
+}
+.info-box{
+    margin-bottom: 20px;
+}
+.info-box span{
+    margin-left:15px ;
+}
+#skills{
+    margin-top: 20px;
+
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;/*1 rem =16 px*/
+    margin-top: 20px;
+}
+.right-section1{
+    background-color: rgba(0, 0, 0, 0.723);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.right-section img{
+    width: 90%;
+}
+.info-box1{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.info-box1 span{
+    font-size: 20px;
+    font-weight: 600;
+  
+}
+.bar-box{
+    width: 100%;
+    height:0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    background-color: rgb(240, 38, 72);
+    width: 95%;
+}
+.css-bar{
+    background-color: rgb(240, 38, 72);
+    width: 88%;
+}
+.js-bar{
+    background-color: rgb(240, 38, 72);
+    width: 89%;
+}
+.react-bar{
+    background-color: rgb(240, 38, 72);
+    width: 85%;
+}
+
+
+ .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 30%;
+    margin: auto;
+    margin-top :3%
+   
+ } 
+ .icon,.up-arrow{
+    width:50px;
+    height: 50px;
+    /* border:1px solid; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+@media(max-width:650px){
+    .icon{
+        padding: 5px;
+   
+    }
+}
+.icon:hover{
+    background-color: rgb(240, 38, 72);
+}
+.icon i:hover{
+    color: white;
+    animation: shake 0.75s;
+}
+/* or
+.icon:hover i{
+    color:white;
+}
+*/
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%
+    {
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg); 
+    }
+}
+footer{
+    margin: 50px 0px;
+}
+footer p{
+text-align: center;
+font-weight: 600px;
+font: size 18px;
+}
+.up-arrow{
+    float: right;
+    background-color:rgb(240, 38, 72);
+    margin:30px 20px 30px 0px;
+}
+.up-arrow:hover i{
+    color: white;
+}
+.work{
+    background-color: rgba(240, 38, 72, 0.808);
+  
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.card-title{
+    color: white;
+}
+.card-img{
+    border: solid 2px rgb(240, 38, 72);;
+}
